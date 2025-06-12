@@ -117,11 +117,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
           id: program.id,
           startTime: program.start,
           endTime: program.end,
-          isAllDay: true,
+          isAllDay: false,
           subject: package.name,
           notes: package.description,
           color: program.status
-              ? (package.status ? Colors.green : Colors.red)
+              ? (package.status ? Colors.lightBlue.shade400 : Colors.red)
               : Colors.grey,
         );
       } catch (e) {

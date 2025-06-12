@@ -20,6 +20,11 @@ class _MenuWidgetState extends State<MenuWidget> {
           {Navigator.pushNamed(context, "/profile")},
       },
       currentIndex: widget.currentIndex,
+      backgroundColor: Colors.lightBlue.shade400,
+      selectedItemColor: Colors.white,
+      unselectedItemColor: Colors.lightBlue.shade100,
+      selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+      type: BottomNavigationBarType.fixed,
       items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.calendar_month),
